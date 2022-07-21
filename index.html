@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+
+  <style>
+    body {
+      background-color: rgba(10, 55, 51, 100%);
+      background-image: linear-gradient(to top, transparent, rgba(0, 95, 95, 0.8));
+      padding: 100px;
+    }
+
+    h1,
+    h2 {
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 25px;
+      color: yellow;
+    }
+
+    #type-name {
+      width: 240px;
+      padding: 20px;
+      margin-left: 50px;
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 25px;
+      color: rgba(77, 119, 98, 0.8);
+      background-image: linear-gradient(to bottom, transparent, rgba(37, 59, 128, 0.2));
+      border: 1px solid mediumspringgreen;
+      box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    input[type=button] {
+      width: 140px;
+      height: 30px;
+      margin: 5px 15px;
+      color: yellow;
+      padding: 20px;
+      cursor: pointer;
+      background-color: rgba(27, 19, 98, 0.8);
+      background-image: linear-gradient(to bottom, transparent, rgba(37, 59, 128, 0.2));
+      border: 1px solid mediumspringgreen;
+      box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7);
+    }
+
+
+    .cad-login {
+      width: 280px;
+      height: 200px;
+      background-color: rgba(25, 64, 48, 1);
+      background-image: linear-gradient(to top, transparent, rgba(25, 64, 118, 0.8));
+      margin-top: 50px;
+      margin-left: 50px;
+      border: 1px solid mediumspringgreen;
+      box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .cad-login form {
+      padding: 20px;
+      display: block;
+    }
+
+    .cad-login input[type=email],
+    input[type=password] {
+      padding: 5px;
+      margin-top: 5px;
+      height: 30px;
+    }
+
+
+
+    .movi {
+      width: 200px;
+      height: 260px;
+      background-color: rgba(25, 64, 48, 1);
+      background-image: linear-gradient(to top, transparent, rgba(25, 64, 118, 0.8));
+      padding: 10px;
+      margin-top: 50px;
+      margin-left: 50px;
+      border: 1px solid mediumspringgreen;
+      box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0.7);
+      display: none;
+    }
+
+
+    .movi form {
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .movi form input {
+      margin-top: 10px;
+    }
+
+    .movi input[type=text] {
+      height: 30px;
+    }
+
+    .movi form label {
+      color: yellow;
+    }
+
+    .show-div {
+      display: flex;
+    }
+
+    .hidden-div {
+      display: none;
+    }
+  </style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <h1>JavaScript</h1>
+  <h2>Curso Innovation One</h2>
+
+  <div id="type-name">Tela de Cadastro</div>
+
+
+  <div class="cad-login" id="div-log">
+
+    <form name="form-login">
+      <input type="email" name="email" placeholder="email">
+      <input type="password" name="senha" placeholder="senha">
+      <input type="button" value="Cadastrar" id="btn-cad-logar">
+    </form>
+
+  </div>
+
+
+
+
+
+
+  <div class="movi" id="div-mov">
+
+    <form name="form-mov">
+
+      <label>Saldo</label>
+      <input type="text" name="saldo" readonly>
+
+      <input type="radio" id="saque" name="operacao" value="saque">
+      <label for="saque">Sacar</label>
+
+      <input type="radio" id="pix" name="operacao" value="pix">
+      <label for="pix">Pix</label>
+
+      <input type="text" id="valor" name="valor" placeholder="informe o valor! ">
+
+      <input type="button" value="executar" id="btn-mov">
+
+    </form>
+
+  </div>
+
+
+
+  <script type="text/javascript" src="function.js"></script>
+
+
+
+</body>
+
+</html>
